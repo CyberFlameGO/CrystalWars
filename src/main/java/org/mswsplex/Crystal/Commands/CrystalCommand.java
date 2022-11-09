@@ -291,9 +291,9 @@ public class CrystalCommand implements CommandExecutor, TabCompleter {
 						player.teleport(world.getSpawnLocation());
 						worldName = world.getName();
 					}
-					data.set("Games." + worldName + ".maxTeamSize", 4);
+					data.set("Games." + worldName + ".maxTeamSize", 2);
 					data.set("Games." + worldName + ".maxSize", 16);
-					data.set("Games." + worldName + ".startAt", 8);
+					data.set("Games." + worldName + ".startAt", 2);
 					Main.plugin.saveLocation("Games." + worldName + ".lobby", player.getLocation());
 					Main.plugin.saveLocation("Games." + worldName + ".specSpawn", player.getLocation());
 					gManager.setInfo(player.getWorld(), "status", "lobby");
